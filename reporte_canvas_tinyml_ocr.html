@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reporte de avance Canvas TinyML y OCR</title>
+  <link rel="stylesheet" href="reporte_canvas_tinyml_ocr.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__inner">
+      <p class="eyebrow">Reporte ejecutivo</p>
+      <h1>Reporte de avance Canvas TinyML y OCR</h1>
+      <p class="hero__lead">
+        Este reporte queda organizado en dos temas únicos e independientes. El primero
+        aborda <strong>OCR y documentos limpios</strong> como base confiable para normatividad,
+        búsqueda semántica e IA. El segundo presenta el avance de <strong>TinyML aplicado a Canvas</strong>,
+        centrado en Canvitas como capa de interpretación de lenguaje natural.
+      </p>
+      <div class="hero__tags">
+        <span>OCR</span>
+        <span>Reglamentos limpios</span>
+        <span>TinyML / MiniLM</span>
+        <span>Canvas LMS</span>
+        <span>Canvitas</span>
+      </div>
+      <div class="hero__split">
+        <article class="hero__topic hero__topic--ocr">
+          <p class="hero__topic-label">Tema 1</p>
+          <h3>OCR y documentos limpios</h3>
+          <p>Diagnóstico del acervo, riesgos del mal OCR y resultados esperados tras la limpieza documental.</p>
+        </article>
+        <article class="hero__topic hero__topic--tinyml">
+          <p class="hero__topic-label">Tema 2</p>
+          <h3>TinyML y Canvas</h3>
+          <p>Avance de Canvitas, precisión del modelo y valor de una interfaz ligera para operar Canvas.</p>
+        </article>
+      </div>
+   </div>
+  </header>
+
+  <main class="report">
+    <section class="section section--theme section--ocr">
+      <div class="section__heading">
+        <p class="section__kicker">Tema 1</p>
+        <h2>OCR y documentos limpios</h2>
+      </div>
+      <div class="grid grid--summary">
+        <article class="card">
+          <h3>Objetivo del frente OCR</h3>
+          <p>
+            Asegurar que reglamentos y documentos normativos puedan ser usados por sistemas
+            de IA sin perder exactitud jurídica, operativa ni semántica durante el proceso de digitalización.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Problema detectado</h3>
+          <p>
+            El análisis de calidad OCR muestra ruido suficiente como para afectar embeddings,
+            consultas normativas, recuperación documental y respuestas generadas por modelos.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Meta esperada</h3>
+          <p>
+            Obtener documentos limpios, estructurados y confiables para alimentar
+            búsquedas semánticas, almacenamiento vectorial y asistentes con menor riesgo de error.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--ocr">
+      <div class="section__heading">
+        <p class="section__kicker">Calidad OCR</p>
+        <h2>Diagnóstico del acervo documental normativo</h2>
+      </div>
+      <p class="section__lead">
+        El análisis de OCR sobre 174 archivos permitió medir el estado del acervo documental que se utilizará para alimentar
+        un modelo LLM mediante almacenamiento vectorial. Los resultados confirman que existe variabilidad importante en la
+        calidad de reconocimiento.
+      </p>
+      <div class="grid grid--metrics">
+        <article class="card stat-card">
+          <span class="stat-card__value">14.46%</span>
+          <span class="stat-card__label">Promedio de caracteres corruptos</span>
+        </article>
+        <article class="card stat-card">
+          <span class="stat-card__value">44.3%</span>
+          <span class="stat-card__label">Promedio de palabras mal escritas</span>
+        </article>
+        <article class="card stat-card">
+          <span class="stat-card__value">0.1120</span>
+          <span class="stat-card__label">Densidad promedio de texto</span>
+        </article>
+        <article class="card stat-card">
+          <span class="stat-card__value">0.7977</span>
+          <span class="stat-card__label">Entropía promedio</span>
+        </article>
+      </div>
+      <div class="grid grid--two">
+        <article class="card">
+          <h3>Problemas frecuentes detectados</h3>
+          <ul>
+            <li>Resolución insuficiente en varios documentos escaneados.</li>
+            <li>Texto borroso, con sombra o contraste débil.</li>
+            <li>Páginas inclinadas y tablas mal interpretadas.</li>
+            <li>Sellos, marcas de agua y ruido visual sobre el texto.</li>
+            <li>Pérdida de estructura en líneas, columnas y numerales.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Interpretación crítica</h3>
+          <p>
+            Aunque algunas métricas pueden parecer favorables, el propio análisis advierte que un texto muy fragmentado
+            o excesivamente simple puede inflar la legibilidad sin implicar buena calidad real. Esto vuelve indispensable
+            una lectura integral de las métricas, no una revisión aislada.
+          </p>
+        </article>
+      </div>
+      <article class="callout">
+        <strong>Lectura ejecutiva:</strong> la calidad documental sigue siendo un requisito crítico. Un OCR aceptable en apariencia
+        no necesariamente garantiza un texto utilizable para normatividad, IA o consulta institucional.
+      </article>
+    </section>
+
+    <section class="section section--ocr">
+      <div class="section__heading">
+        <p class="section__kicker">Riesgo operativo</p>
+        <h2>Impacto de un OCR deficiente sobre IA y búsqueda semántica</h2>
+      </div>
+      <div class="grid grid--two">
+        <article class="card">
+          <h3>Efectos principales</h3>
+          <ul>
+            <li>Embeddings corruptos que devuelven contexto irrelevante o incompleto.</li>
+            <li>Pérdida o deformación de fechas, cantidades, artículos, cláusulas y definiciones.</li>
+            <li>Incremento de alucinaciones por texto ambiguo o dañado.</li>
+            <li>Separación artificial de conceptos equivalentes dentro de la base vectorial.</li>
+            <li>Mayor costo computacional por ruido y peor precisión global.</li>
+          </ul>
+        </article>
+        <article class="card card--warning">
+          <h3>Conclusión de riesgo</h3>
+          <p>
+            Un sistema conversacional bien entrenado sobre Canvas no compensa por sí solo una base documental dañada.
+            Si el reglamento fue mal extraído, la respuesta final puede sonar convincente y al mismo tiempo estar equivocada.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--ocr">
+      <div class="section__heading">
+        <p class="section__kicker">Resultados esperados</p>
+        <h2>Qué debe ocurrir al limpiar correctamente los reglamentos</h2>
+      </div>
+      <div class="grid grid--two">
+        <article class="card">
+          <h3>Mejoras esperadas según el documento</h3>
+          <ul>
+            <li>Incremento consistente en legibilidad y OCR score.</li>
+            <li>Reducción de entropía y mayor coherencia textual.</li>
+            <li>Mejor identificación de documentos más beneficiados por la limpieza.</li>
+            <li>Base más estable para procesos de entrenamiento, indexación y consulta.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Valor para la institución</h3>
+          <ul>
+            <li>Mayor precisión en respuestas normativas.</li>
+            <li>Menor ruido semántico en búsquedas.</li>
+            <li>Reducción de errores en interpretación legal u operativa.</li>
+            <li>Mejor priorización de archivos problemáticos antes de su publicación.</li>
+          </ul>
+        </article>
+      </div>
+      <div class="progress-list">
+        <div class="progress-item" data-progress="90">
+          <div class="progress-item__head">
+            <span>Legibilidad</span>
+            <span>Mejora esperada alta</span>
+          </div>
+          <div class="progress"><span></span></div>
+        </div>
+        <div class="progress-item" data-progress="92">
+          <div class="progress-item__head">
+            <span>OCR score</span>
+            <span>Mejora esperada alta</span>
+          </div>
+          <div class="progress"><span></span></div>
+        </div>
+        <div class="progress-item" data-progress="26">
+          <div class="progress-item__head">
+            <span>Entropía</span>
+            <span>Debe disminuir</span>
+          </div>
+          <div class="progress progress--reverse"><span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--ocr">
+      <div class="section__heading">
+        <p class="section__kicker">Estado meta</p>
+        <h2>Características de un reglamento limpio listo para IA</h2>
+      </div>
+      <div class="grid grid--three">
+        <article class="card">
+          <h3>Integridad textual</h3>
+          <p>
+            El texto debe conservar números, nombres, artículos, incisos y fechas sin alteraciones ni caracteres extraños.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Estructura semántica</h3>
+          <p>
+            Debe mantener encabezados, secciones, tablas y jerarquías para permitir segmentación y recuperación coherente.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Confiabilidad de consulta</h3>
+          <p>
+            Tiene que ser suficientemente limpio para responder preguntas normativas con precisión y trazabilidad.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--ocr">
+      <div class="section__heading">
+        <p class="section__kicker">Siguiente ruta</p>
+        <h2>Ruta de trabajo para OCR y limpieza documental</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline__item">
+          <span class="timeline__step">1</span>
+          <h3>Diagnóstico por lotes</h3>
+          <p>Clasificar documentos por severidad y priorizar los que más afectan consultas normativas.</p>
+        </article>
+        <article class="timeline__item">
+          <span class="timeline__step">2</span>
+          <h3>Limpieza y reproceso</h3>
+          <p>Aplicar correcciones de alineación, ruido, contraste y validación especializada en tablas y numerales.</p>
+        </article>
+        <article class="timeline__item">
+          <span class="timeline__step">3</span>
+          <h3>Revalidación comparativa</h3>
+          <p>Medir antes y después para comprobar mejora real y detectar pérdida de texto útil.</p>
+        </article>
+        <article class="timeline__item">
+          <span class="timeline__step">4</span>
+          <h3>Integración a IA</h3>
+          <p>Liberar únicamente documentos aprobados a flujos de búsqueda vectorial y asistentes conversacionales.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-divider">
+      <div class="section-divider__line"></div>
+      <div class="section-divider__label">Cambio de tema</div>
+      <div class="section-divider__line"></div>
+    </section>
+
+    <section class="section section--theme section--tinyml">
+      <div class="section__heading">
+        <p class="section__kicker">Tema 2</p>
+        <h2>TinyML y Canvas</h2>
+      </div>
+      <div class="grid grid--summary">
+        <article class="card">
+          <h3>Objetivo del frente TinyML</h3>
+          <p>
+            Facilitar la interacción con Canvas mediante una capa ligera de comprensión
+            de lenguaje natural que traduzca solicitudes del usuario a acciones concretas sobre la API.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Enfoque adoptado</h3>
+          <p>
+            Canvitas utiliza MiniLM como motor NLU y un gestor de diálogo orientado a tareas
+            para resolver ambigüedades y completar parámetros faltantes.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Valor esperado</h3>
+          <p>
+            Reducir fricción de uso, habilitar acceso más natural a funciones del LMS
+            y sentar una base operativa para automatizaciones más precisas.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--tinyml">
+      <div class="section__heading">
+        <p class="section__kicker">Canvas y TinyML</p>
+        <h2>Estado del componente conversacional</h2>
+      </div>
+      <div class="grid grid--two">
+        <article class="card card--accent">
+          <h3>Hallazgos sobre Canvitas</h3>
+          <ul>
+            <li>Traduce consultas en español a intenciones estructuradas de la API de Canvas LMS.</li>
+            <li>Utiliza una arquitectura ligera basada en MiniLM y un gestor de diálogo orientado a tareas.</li>
+            <li>Busca reducir fricción operativa para usuarios no técnicos o con poca familiaridad con el LMS.</li>
+            <li>Introduce una forma más natural de acceso a funciones académicas y administrativas.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Resultados técnicos reportados</h3>
+          <div class="metrics">
+            <div class="metric">
+              <span class="metric__value">12,600</span>
+              <span class="metric__label">ejemplos sintéticos generados</span>
+            </div>
+            <div class="metric">
+              <span class="metric__value">36</span>
+              <span class="metric__label">intenciones modeladas</span>
+            </div>
+            <div class="metric">
+              <span class="metric__value">98.4%</span>
+              <span class="metric__label">precisión en intención</span>
+            </div>
+            <div class="metric">
+              <span class="metric__value">99.55%</span>
+              <span class="metric__label">precisión en entidades</span>
+            </div>
+          </div>
+        </article>
+      </div>
+      <article class="callout">
+        <strong>Lectura ejecutiva:</strong> el componente conversacional presenta un avance sólido y demuestra que es viable
+        traducir lenguaje natural a acciones concretas sobre Canvas. Su mejor aprovechamiento ocurre cuando opera sobre
+        información institucional limpia, consistente y lista para consulta.
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Reporte de avance Canvas TinyML y OCR</p>
+    <p>Documento web reorganizado en dos temas únicos: OCR y documentos limpios, y TinyML aplicado a Canvas.</p>
+  </footer>
+
+  <script src="reporte_canvas_tinyml_ocr.js"></script>
+</body>
+</html>
