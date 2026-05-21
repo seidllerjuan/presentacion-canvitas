@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reporte de avance Canvas TinyML y OCR</title>
-  <link rel="stylesheet" href="reporte_canvas_tinyml_ocr.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <header class="hero">
@@ -12,10 +12,10 @@
       <p class="eyebrow">Reporte ejecutivo</p>
       <h1>Reporte de avance Canvas TinyML y OCR</h1>
       <p class="hero__lead">
-        El primer tema
-        aborda <strong>OCR y documentos limpios</strong> como base confiable para normatividad,
-        búsqueda semántica e IA. El segundo presenta el avance de <strong>TinyML aplicado a Canvas</strong>,
-        centrado en Canvitas como capa de interpretación de lenguaje natural.
+        El reporte queda separado en dos temas. El primero aborda <strong>OCR y documentos limpios</strong>
+        como base confiable para normatividad, búsqueda semántica e IA. El segundo desarrolla
+        <strong>TinyML aplicado a Canvas</strong>, centrado en Canvitas como capa ligera de interpretación
+        de lenguaje natural.
       </p>
       <div class="hero__tags">
         <span>OCR</span>
@@ -33,10 +33,10 @@
         <article class="hero__topic hero__topic--tinyml">
           <p class="hero__topic-label">Tema 2</p>
           <h3>TinyML y Canvas</h3>
-          <p>Avance de Canvitas, precisión del modelo y valor de una interfaz ligera para operar Canvas.</p>
+          <p>Arquitectura, entrenamiento, verificación de intenciones, desambiguación, pruebas y despliegue futuro.</p>
         </article>
       </div>
-   </div>
+    </div>
   </header>
 
   <main class="report">
@@ -76,9 +76,9 @@
         <h2>Diagnóstico del acervo documental normativo</h2>
       </div>
       <p class="section__lead">
-        El análisis de OCR sobre 174 archivos permitió medir el estado del acervo documental que se utilizará para alimentar
-        un modelo LLM mediante almacenamiento vectorial. Los resultados confirman que existe variabilidad importante en la
-        calidad de reconocimiento.
+        El análisis de OCR sobre 174 archivos permitió medir el estado del acervo documental que se utilizará
+        para alimentar un modelo LLM mediante almacenamiento vectorial. Los resultados confirman que existe
+        variabilidad importante en la calidad de reconocimiento.
       </p>
       <div class="grid grid--metrics">
         <article class="card stat-card">
@@ -119,8 +119,9 @@
         </article>
       </div>
       <article class="callout">
-        <strong>Lectura ejecutiva:</strong> la calidad documental sigue siendo un requisito crítico. Un OCR aceptable en apariencia
-        no necesariamente garantiza un texto utilizable para normatividad, IA o consulta institucional.
+        <strong>Lectura ejecutiva:</strong> la calidad documental sigue siendo un requisito crítico.
+        Un OCR aceptable en apariencia no necesariamente garantiza un texto utilizable para normatividad,
+        IA o consulta institucional.
       </article>
     </section>
 
@@ -150,8 +151,6 @@
       </div>
     </section>
 
-   
-
     <section class="section-divider">
       <div class="section-divider__line"></div>
       <div class="section-divider__label">Cambio de tema</div>
@@ -167,22 +166,22 @@
         <article class="card">
           <h3>Objetivo del frente TinyML</h3>
           <p>
-            Facilitar la interacción con Canvas mediante una capa ligera de comprensión
-            de lenguaje natural que traduzca solicitudes del usuario a acciones concretas sobre la API.
+            Facilitar la interacción con Canvas mediante una capa ligera de comprensión de lenguaje natural
+            que traduzca solicitudes del usuario a acciones concretas sobre la API.
           </p>
         </article>
         <article class="card">
           <h3>Enfoque adoptado</h3>
           <p>
-            Canvitas utiliza MiniLM como motor NLU y un gestor de diálogo orientado a tareas
-            para resolver ambigüedades y completar parámetros faltantes.
+            Canvitas utiliza MiniLM como motor NLU y un gestor de diálogo orientado a tareas para resolver
+            ambigüedades y completar parámetros faltantes.
           </p>
         </article>
         <article class="card">
           <h3>Valor esperado</h3>
           <p>
-            Reducir fricción de uso, habilitar acceso más natural a funciones del LMS
-            y sentar una base operativa para automatizaciones más precisas.
+            Reducir fricción de uso, habilitar acceso más natural a funciones del LMS y sentar una base operativa
+            para automatizaciones más precisas.
           </p>
         </article>
       </div>
@@ -190,21 +189,22 @@
 
     <section class="section section--tinyml">
       <div class="section__heading">
-        <p class="section__kicker">Canvas y TinyML</p>
-        <h2>Estado del componente conversacional</h2>
+        <p class="section__kicker">Panorama general</p>
+        <h2>Qué se hizo en el proyecto Canvitas</h2>
       </div>
       <div class="grid grid--two">
         <article class="card card--accent">
-          <h3>Hallazgos sobre Canvitas</h3>
+          <h3>Alcance del trabajo</h3>
           <ul>
-            <li>Traduce consultas en español a intenciones estructuradas de la API de Canvas LMS.</li>
-            <li>Utiliza una arquitectura ligera basada en MiniLM y un gestor de diálogo orientado a tareas.</li>
-            <li>Busca reducir fricción operativa para usuarios no técnicos o con poca familiaridad con el LMS.</li>
-            <li>Introduce una forma más natural de acceso a funciones académicas y administrativas.</li>
+            <li>Mapeo de posibilidades de uso de la API de Canvas LMS hasta convertirlas en 36 intenciones.</li>
+            <li>Diseño de un sistema NLU para detectar intención y extraer entidades en español.</li>
+            <li>Construcción de un gestor de diálogo para desambiguar consultas y completar datos faltantes.</li>
+            <li>Generación controlada de dataset sintético para entrenamiento, validación y prueba.</li>
+            <li>Exportación y validación del modelo en ONNX como paso previo al despliegue productivo.</li>
           </ul>
         </article>
         <article class="card">
-          <h3>Resultados técnicos reportados</h3>
+          <h3>Resultados técnicos principales</h3>
           <div class="metrics">
             <div class="metric">
               <span class="metric__value">12,600</span>
@@ -215,21 +215,211 @@
               <span class="metric__label">intenciones modeladas</span>
             </div>
             <div class="metric">
-              <span class="metric__value">98.4%</span>
-              <span class="metric__label">precisión en intención</span>
+              <span class="metric__value">33</span>
+              <span class="metric__label">etiquetas IOB para entidades</span>
             </div>
             <div class="metric">
-              <span class="metric__value">99.55%</span>
-              <span class="metric__label">precisión en entidades</span>
+              <span class="metric__value">16</span>
+              <span class="metric__label">entidades base documentadas</span>
             </div>
           </div>
         </article>
       </div>
       <article class="callout">
-        <strong>Lectura ejecutiva:</strong> el componente conversacional presenta un avance sólido y demuestra que es viable
-        traducir lenguaje natural a acciones concretas sobre Canvas. Su mejor aprovechamiento ocurre cuando opera sobre
-        información institucional limpia, consistente y lista para consulta.
+        <strong>Lectura ejecutiva:</strong> el trabajo no se limitó a entrenar un modelo.
+        También incluyó definición de intenciones, documentación de entidades, control de ambigüedad,
+        verificación de resultados y preparación para despliegue futuro.
       </article>
+    </section>
+
+    <section class="section section--tinyml">
+      <div class="section__heading">
+        <p class="section__kicker">Entidades e intenciones</p>
+        <h2>Documentación semántica y verificación de intención</h2>
+      </div>
+      <div class="grid grid--two">
+        <article class="card">
+          <h3>Cómo se documentó el problema</h3>
+          <ul>
+            <li>Se definió un léxico estructurado con verbos de acción, verbos suaves, objetos semánticos y modificadores.</li>
+            <li>Se mapearon entidades realistas como usuarios, cursos, fechas, IDs y títulos de tareas.</li>
+            <li>Cada intención quedó configurada con combinaciones válidas para evitar frases semánticamente incorrectas.</li>
+            <li>La salida de entidades usa esquema IOB para delimitar correctamente los fragmentos dentro de la oración.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Verificación de intenciones</h3>
+          <ul>
+            <li>La clasificación de intención se evaluó como problema multiclase con medición explícita de precisión.</li>
+            <li>La división 70/15/15 permitió validar generalización real y no solo desempeño sobre entrenamiento.</li>
+            <li>El modelo entrega ranking de intenciones probables, no una única etiqueta ciega.</li>
+            <li>La verificación se complementa con la distancia entre top-1 y top-2 para decidir ejecución, cautela o repregunta.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--tinyml">
+      <div class="section__heading">
+        <p class="section__kicker">Desambiguación</p>
+        <h2>Cómo se resolvió la ambigüedad en la conversación</h2>
+      </div>
+      <div class="grid grid--three">
+        <article class="card">
+          <h3>Ambigüedad modelada desde el dataset</h3>
+          <p>
+            El generador V2 produjo frases con ambigüedad total, parcial y sin ambigüedad, para entrenar al sistema
+            a operar tanto con consultas completas como con solicitudes incompletas.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Reglas del gestor ToD</h3>
+          <p>
+            Si la confianza del top-1 es alta y la diferencia contra el top-2 es amplia, la intención se ejecuta.
+            Si la diferencia es pequeña, el sistema formula una pregunta desambiguadora.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Resultado práctico</h3>
+          <p>
+            La desambiguación deja de depender solo del score bruto del modelo y se convierte en una decisión operativa
+            basada en confianza, contexto faltante y riesgo de equivocación.
+          </p>
+        </article>
+      </div>
+      <div class="comparison-strip">
+        <div class="comparison-strip__item">
+          <strong>Confianza alta</strong>
+          <span>Ejecución directa</span>
+        </div>
+        <div class="comparison-strip__item">
+          <strong>Diferencia media</strong>
+          <span>Ejecución con cautela o confirmación</span>
+        </div>
+        <div class="comparison-strip__item">
+          <strong>Diferencia baja</strong>
+          <span>Repregunta desambiguadora</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tinyml">
+      <div class="section__heading">
+        <p class="section__kicker">Dataset y entrenamiento</p>
+        <h2>Cómo se entrenó el modelo y qué infraestructura se utilizó</h2>
+      </div>
+      <div class="grid grid--two">
+        <article class="card">
+          <h3>Construcción del dataset</h3>
+          <ul>
+            <li>Se generaron 350 ejemplos por cada una de las 36 intenciones.</li>
+            <li>Las frases se balancearon por longitud: 30% cortas, 40% medias y 30% largas.</li>
+            <li>Se aplicaron validaciones sintácticas y semánticas, además de reintentos de generación.</li>
+            <li>Solo se declararon slots cuando aparecían explícitamente en el texto, evitando inconsistencias.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Entrenamiento e infraestructura</h3>
+          <ul>
+            <li>Se utilizó <strong>paraphrase-multilingual-MiniLM-L12-v2</strong> como codificador base.</li>
+            <li>El entrenamiento multitarea combinó intención y entidades con pérdida ponderada.</li>
+            <li>Se ocupó precisión mixta FP16 con <strong>torch.amp</strong> aprovechando GPU <strong>NVIDIA RTX 4090</strong>.</li>
+            <li>La configuración reportada incluye AdamW, batch size 64, 12 épocas y learning rate de 3×10⁻⁵.</li>
+          </ul>
+        </article>
+      </div>
+      <div class="grid grid--four">
+        <article class="card mini-stat">
+          <span class="mini-stat__value">5</span>
+          <span class="mini-stat__label">versiones del modelo entrenadas</span>
+        </article>
+        <article class="card mini-stat">
+          <span class="mini-stat__value">70/15/15</span>
+          <span class="mini-stat__label">división train / val / test</span>
+        </article>
+        <article class="card mini-stat">
+          <span class="mini-stat__value">0.5 / 1.5</span>
+          <span class="mini-stat__label">ponderación intención / entidades</span>
+        </article>
+        <article class="card mini-stat">
+          <span class="mini-stat__value">RTX 4090</span>
+          <span class="mini-stat__label">aceleración de entrenamiento</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--tinyml">
+      <div class="section__heading">
+        <p class="section__kicker">Pruebas y validación</p>
+        <h2>Qué pruebas existen y cómo se comprobó el desempeño</h2>
+      </div>
+      <div class="grid grid--two">
+        <article class="card">
+          <h3>Comparativa entre modelos</h3>
+          <ul>
+            <li>Se entrenaron cinco versiones, mejorando progresivamente dataset, validación y pérdida.</li>
+            <li>Los modelos 1 a 3 se evaluaron en validación; los modelos 4 y 5 ya sobre conjunto independiente de prueba.</li>
+            <li>La mejora más visible se dio en entidades al pasar de pérdida uniforme a pérdida ponderada.</li>
+            <li>Esto confirmó que la tarea de NER requería más peso que la clasificación de intención.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Métricas finales reportadas</h3>
+          <div class="metrics">
+            <div class="metric">
+              <span class="metric__value">98.39%</span>
+              <span class="metric__label">mejor precisión final de intención</span>
+            </div>
+            <div class="metric">
+              <span class="metric__value">99.55%</span>
+              <span class="metric__label">mejor precisión final de entidades</span>
+            </div>
+            <div class="metric">
+              <span class="metric__value">100%</span>
+              <span class="metric__label">coincidencia argmax intención ONNX</span>
+            </div>
+            <div class="metric">
+              <span class="metric__value">100%</span>
+              <span class="metric__label">coincidencia argmax entidades ONNX</span>
+            </div>
+          </div>
+        </article>
+      </div>
+      <article class="card">
+        <h3>Validación PyTorch vs ONNX</h3>
+        <p>
+          El mejor modelo se exportó a ONNX y se comparó contra PyTorch en 100 muestras de prueba.
+          Las diferencias de logits quedaron en el orden de 10⁻⁷ a 10⁻⁶, lo que respalda equivalencia numérica
+          y abre la puerta a despliegue posterior en C++ sin degradación observable.
+        </p>
+      </article>
+    </section>
+
+    <section class="section section--tinyml">
+      <div class="section__heading">
+        <p class="section__kicker">Conclusiones y siguientes pasos</p>
+        <h2>Estado actual del tema TinyML</h2>
+      </div>
+      <div class="grid grid--two">
+        <article class="card">
+          <h3>Logros alcanzados</h3>
+          <ul>
+            <li>Ya existe una base funcional para traducir lenguaje natural a acciones sobre Canvas.</li>
+            <li>La verificación de intención y la extracción de entidades muestran resultados altos y consistentes.</li>
+            <li>La desambiguación quedó incorporada al flujo operativo y no solo al entrenamiento.</li>
+            <li>La validación con ONNX dejó listo el camino para despliegues de menor latencia.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Límites y trabajo futuro</h3>
+          <ul>
+            <li>La calidad semántica del dataset aún puede enriquecerse con lenguaje más natural.</li>
+            <li>Hace falta un DST completo para conversaciones multi-turno más robustas.</li>
+            <li>Se propone piloto con usuarios reales para capturar datos auténticos.</li>
+            <li>El despliegue futuro contempla inferencia en C++ y posible cuantización INT8.</li>
+          </ul>
+        </article>
+      </div>
     </section>
   </main>
 
@@ -238,6 +428,6 @@
     <p>Documento web reorganizado en dos temas únicos: OCR y documentos limpios, y TinyML aplicado a Canvas.</p>
   </footer>
 
-  <script src="reporte_canvas_tinyml_ocr.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
